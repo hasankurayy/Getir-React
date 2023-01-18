@@ -1,38 +1,26 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(243,244,246);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flag-select button{
+    @apply h-14 border-2 border-gray-200 hover:border-primary-brand-color transition-colors bg-white !pb-0
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.category-container{
+    display: grid;
+    grid-template-columns:repeat( auto-fit, minmax(150px, 1fr) );
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.for-shadow{
+    box-shadow: 0px 10px 5px 0px red;
 }
